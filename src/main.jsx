@@ -1,7 +1,6 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HashRouter , Route, Router ,Routes } from 'react-router-dom'
-import MainLayout from './assets/layouts/mainLayout'
+import MainLayout from './assets/layouts/MainLayout'
 import HomePage from './assets/pages/HomePage'
 import AboutPage from './assets/pages/AboutPage'
 
