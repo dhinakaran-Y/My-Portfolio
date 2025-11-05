@@ -1,11 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { HashRouter , Route, Router ,Routes } from 'react-router-dom'
+import MainLayout from './assets/layouts/mainLayout'
+import HomePage from './assets/pages/HomePage'
+import AboutPage from './assets/pages/AboutPage'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <h1 className='font-bold text-4xl text-red-500 m-12 underline'>hello, Dhina</h1>
-    <App />
-  </StrictMode>,
+  <HashRouter>
+    <Routes>
+      <Route path='/' element={<MainLayout/>}>
+        <Route index element={<HomePage/>}/>
+        <Route path='about' element={<AboutPage/>}/>
+      </Route>
+    </Routes>
+  </HashRouter>
 )
