@@ -3,9 +3,9 @@ const TheLeftLinkSection = () => {
       <>
         <div
           id="link-div"
-          className="fixed z-40 bottom-10 left-0 flex flex-col items-center space-y-15 p-3 rounded-xl *:bg-black"
+          className="fixed z-40 bottom-10 left-0 flex flex-col items-center space-y-15 p-3 rounded-xl *:bg-black **:fill-gray-500 *:hover:**:fill-white"
         >
-          <a href="">
+          <a href="" className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.5rem"
@@ -61,7 +61,7 @@ const TheLeftLinkSection = () => {
             </svg>
           </a>
         </div>
-        <hr className="fixed left-[22px] bottom-0 h-[328px] border-l-3 border-[#b4b0b0] z-30" />
+        <hr className="fixed left-[22px] bottom-0 h-[328px] border-l-3 border-gray-500 z-30" />
       </>
     );
 }
