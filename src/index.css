@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme{
+    --color-custom-green: #2E9A70 ;
+}
