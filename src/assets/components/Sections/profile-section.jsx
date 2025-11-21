@@ -15,7 +15,7 @@ const ProfileSection = () => {
   return (
     <div className="mx-25 flex mb-5 mt-2 space-x-50">
       <div className={`transition-all duration-2000 delay-500 transform ${visible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"}`}>
-        <img className="w-[30vw]" src="./public/Images/profile.png" alt="dhina-profile-img" />
+        <img className="w-[30vw]" src="public/Images/profile.png" alt="dhina-profile-img" />
       </div>
       <div className={`w-[40vw] space-y-3 mt-30 transition-all duration-2000 delay-500 transform ${visible ? "translate-x-0 opacity-100" : "translate-x-16 opacity-0"}`}>
         <h2 className="text-7xl font-bold">Hi,I'm</h2>
