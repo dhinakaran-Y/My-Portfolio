@@ -26,6 +26,5 @@
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
     "vite": "^7.1.7"
-  },
-  "homepage": "https://dhinakaran-y.github.io/My-Portfolio/"
+  }
 }
