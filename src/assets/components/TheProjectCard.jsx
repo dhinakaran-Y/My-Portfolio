@@ -4,7 +4,7 @@ const TheProjectCard = () => {
   return (
     <div className="grid grid-cols-2 gap-x-20 mx-auto w-[90%]">
       <img
-        src={"./public/Images/projects/aesthetic-movies-img.png"}
+        src={"./Images/projects/aesthetic-movies-img.png"}
         alt="movie"
       />
       <div className="">

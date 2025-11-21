@@ -2,67 +2,67 @@
   {
     "id": 1,
     "name": "React",
-    "path": "./public/Images/tech-stacks/react-icon.png",
+    "path": "./Images/tech-stacks/react-icon.png",
     "summa":"https://github.com/dhinakaran-Y.png"
   },
   {
     "id": 2,
     "name": "Javascript",
-    "path": "./public/Images/tech-stacks/javascript-icon.png"
+    "path": "./Images/tech-stacks/javascript-icon.png"
   },
   {
     "id": 3,
     "name": "tailwindcss",
-    "path": "./public/Images/tech-stacks/tailwind_css_Logo.png"
+    "path": "./Images/tech-stacks/tailwind_css_Logo.png"
   },
   {
     "id": 4,
     "name": "bootstrap",
-    "path": "./public/Images/tech-stacks/bootstrap_logo.svg.png"
+    "path": "./Images/tech-stacks/bootstrap_logo.svg.png"
   },
   {
     "id": 5,
     "name": "Sass",
-    "path": "./public/Images/tech-stacks/sass_logo.svg.png"
+    "path": "./Images/tech-stacks/sass_logo.svg.png"
   },
   {
     "id": 6,
     "name": "Figma",
-    "path": "./public/Images/tech-stacks/Figma-logo.svg.png"
+    "path": "./Images/tech-stacks/Figma-logo.svg.png"
   },
   {
     "id": 7,
     "name": "Firebase",
-    "path": "./public/Images/tech-stacks/firebase-logo-icon-hd.webp"
+    "path": "./Images/tech-stacks/firebase-logo-icon-hd.webp"
   },
   {
     "id": 8,
     "name": "Git",
-    "path": "./public/Images/tech-stacks/git-icon.png"
+    "path": "./Images/tech-stacks/git-icon.png"
   },
   {
     "id": 9,
     "name": "Mysql",
-    "path": "./public/Images/tech-stacks/mysql-logo.svg"
+    "path": "./Images/tech-stacks/mysql-logo.svg"
   },
   {
     "id": 10,
     "name": "Python",
-    "path": "./public/Images/tech-stacks/python-logo.png"
+    "path": "./Images/tech-stacks/python-logo.png"
   },
   {
     "id": 11,
     "name": "C++",
-    "path": "./public/Images/tech-stacks/c++_logo.svg.png"
+    "path": "./Images/tech-stacks/c++_logo.svg.png"
   },
   {
     "id": 12,
     "name": "HTML",
-    "path": "./public/Images/tech-stacks/html_logo.png"
+    "path": "./Images/tech-stacks/html_logo.png"
   },
   {
     "id": 13,
     "name": "CSS",
-    "path": "./public/Images/tech-stacks/css_logo.png"
+    "path": "./Images/tech-stacks/css_logo.png"
   }
 ]
