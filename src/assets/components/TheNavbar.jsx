@@ -12,18 +12,18 @@ const TheNavbar = () => {
     
     return (
       <>
-        <nav className="navbar h-1/12 fixed z-50 top-0 px-20 border-b-2  border-b-gray-600">
+        <nav className="navbar h-1/12 fixed z-50 top-0 px-20 border-b-2 bg-black border-b-gray-600">
           <div className="navbar-start">
             <Link to={""} className="text-4xl font-bold text-custom-green">DHINAKARAN</Link>
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className={`menu flex space-x-8 px-1`}>
-              <Link to={""} className={`font-semibold ${pageLocation === "" | "#/" ? "border-b border-emerald-500" : null}`}>Home</Link>
-              <Link to={""} className={`font-semibold ${pageLocation === "#/project" ? "border-b border-emerald-500" : null}`}>Projects</Link>
-              <Link to={""} className={`font-semibold ${pageLocation === "#/about" ? "border-b border-emerald-500" : null}`}>About</Link>
-              <Link to={""} className={`font-semibold ${pageLocation === "#/skills" ? "border-b border-emerald-500" : null}`}>Skills</Link>
-              <Link to={""} className={`font-semibold ${pageLocation === "#/academics" ? "border-b border-emerald-500" : null}`}>Academics</Link>
-              <Link to={""} className={`font-semibold ${pageLocation === "#/contact" ? "border-b border-emerald-500" : null}`}>Lets Talk</Link>
+              <Link to={""} className={`nav-link ${pageLocation === "" | "#/" ? "border-b border-emerald-500" : null}`}>Home</Link>
+              <Link to={""} className={`nav-link ${pageLocation === "#/project" ? "border-b border-emerald-500" : null}`}>Projects</Link>
+              <Link to={""} className={`nav-link ${pageLocation === "#/about" ? "border-b border-emerald-500" : null}`}>About</Link>
+              <Link to={""} className={`nav-link ${pageLocation === "#/skills" ? "border-b border-emerald-500" : null}`}>Skills</Link>
+              <Link to={""} className={`nav-link ${pageLocation === "#/academics" ? "border-b border-emerald-500" : null}`}>Academics</Link>
+              <Link to={""} className={`nav-link ${pageLocation === "#/contact" ? "border-b border-emerald-500" : null}`}>Lets Talk</Link>
             </ul>
           </div>
           <div className="dropdown ml-auto">

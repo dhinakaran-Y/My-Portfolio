@@ -2,4 +2,43 @@
 
 @theme{
     --color-custom-green: #2E9A70 ;
+    --color-custom-gray: #1e1e1e ;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and old Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Edge */
+}
+
+.nav-link{
+  @apply font-semibold
+}
+
+.nav-link:hover{
+  @apply text-custom-green transition-all duration-500;
+}
+
+.outline-btn{
+  @apply text-custom-green border-2 border-custom-green px-5 py-2 font-bold rounded-2xl mx-auto hover:bg-custom-green hover:text-white transform transition-all duration-500;
+}
+
+/* auto scroll */
+.scroll-anim {
+  animation: scroll 90s linear infinite;
+}
+
+.scroll-anim:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-400%);
+  }
 }
