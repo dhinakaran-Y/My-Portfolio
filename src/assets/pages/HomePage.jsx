@@ -6,18 +6,20 @@ import ProfileSection from "../components/Sections/profile-section";
 import ProjectSection from "../components/Sections/project-section";
 import TheRightLinkSection from "../components/Sections/right-side-link-section";
 import SkillsSection from "../components/Sections/skills-section";
+import TheTopNavigateBtn from "../components/TheTopNavigateBtn";
 
 const HomePage = () => {  
   return (
     <section>
       <TheLeftLinkSection />
-      <TheRightLinkSection/>
-      <ProfileSection/>
-      <AboutSection/>
-      <SkillsSection/>
-      <ProjectSection/>
-      <AcademicsSection/>
-      <ContactSection/>
+      <TheRightLinkSection />
+      <ProfileSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectSection />
+      <AcademicsSection />
+      <ContactSection />
+      <TheTopNavigateBtn/>
     </section>
   );
 };

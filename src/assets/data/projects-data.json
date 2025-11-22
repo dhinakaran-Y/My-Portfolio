@@ -1,0 +1,20 @@
+[
+    {
+      "id" : 1,
+      "imgPath":"./Images/projects/aesthetic-movies-img.png",
+      "liveLink":"https://dhinakaran-y.github.io/Aesthetic-Movies-App/",
+      "sourceLink":"https://github.com/dhinakaran-Y/Aesthetic-Movies-App",
+      "title":"Aesthetic Movies",
+      "desc":"An Application like movies website .It's inspired and clone all movies , OTT platform (netflix , crunchyroll , plex ,more..) for learning purpose only.The movie data are fetched from TMDB-Database.",
+      "usedStacks":["javascript", "Tailwindcss" , "TMDB-api"]
+    },
+    {
+      "id": 2,
+      "imgPath": "./Images/projects/insta-clone-app.png",
+      "liveLink": "https://dhinakaran-y.github.io/Instagram-clone-app/",
+      "sourceLink": "https://github.com/dhinakaran-Y/Instagram-clone-app",
+      "title": "Instagram Clone App",
+      "desc": "An Instagram clone app using react . My first app after learned react and I take it as a test project for use the react",
+      "usedStacks": ["react", "Tailwindcss" , "json"]
+    }
+]

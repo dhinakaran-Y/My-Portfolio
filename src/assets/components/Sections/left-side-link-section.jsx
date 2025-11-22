@@ -4,7 +4,11 @@ const TheLeftLinkSection = () => {
         <div
           id="link-div"
           className="fixed z-40 bottom-10 left-0 flex flex-col items-center space-y-15 p-3 rounded-xl *:bg-black **:fill-gray-500 *:hover:**:fill-white **:transform **:transition-all **:duration-500">
-          <a href="#" className="">
+          <a
+            href="https://github.com/dhinakaran-Y"
+            title="github"
+            className=""
+            target="blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.5rem"
@@ -18,7 +22,10 @@ const TheLeftLinkSection = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/dhinakaran-laran/"
+            title="linkedin"
+            target="blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.5rem"
@@ -32,7 +39,10 @@ const TheLeftLinkSection = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a
+            href="https://www.instagram.com/dhinakaran_laran/"
+            title="instagram"
+            target="blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.5rem"
@@ -44,7 +54,10 @@ const TheLeftLinkSection = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a
+            href="mailto:dhinakaran.y.dhina@gmail.com"
+            title="mail"
+            target="blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.5rem"

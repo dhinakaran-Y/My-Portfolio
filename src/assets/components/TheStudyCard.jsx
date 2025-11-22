@@ -1,7 +1,28 @@
-const TheStudyCard = () => {
+import { useState , useEffect } from "react";
+
+const TheStudyCard = ({role = "Student" , where = "perambalur" , years = "2020 - 2021"}) => {
+    const [visible, setVisible] = useState(false);
+  
+     const minScreenY = 2500;
+  
+     const [screenY, setScreenY] = useState();
+  
+     window.addEventListener("scroll", () =>{
+       setScreenY(pageYOffset);
+     });
+  
+     useEffect(() => {
+       if (screenY > minScreenY) {
+         setVisible(true);
+       }
+     }, [screenY, visible]);
+  
     return (
-      <div className="flex gap-x-7 items-center">
-        <div className="bg-custom-green inline-block rounded-full p-1">
+      <div className="flex gap-x-7 items-center overflow-hidden">
+        <div
+          className={`bg-custom-green inline-block rounded-full p-1 transition-all duration-2000 transform ${
+            visible ? "opacity-100" : "opacity-0"
+          }`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="2rem"
@@ -13,10 +34,11 @@ const TheStudyCard = () => {
             />
           </svg>
         </div>
-        <div className="">
-          <p className="text-custom-green font-bold">2025 - 2026</p>
-          <h5 className="text-xl font-bold">FullStack Intern</h5>
-          <p className="text-gray-500">CyberDude Networks.Pvt.Ltd</p>
+        <div
+          className={`transition-all duration-2000 transform ${visible ? "translate-x-0 opacity-100" : "translate-x-50 opacity-0"}`}>
+          <p className="text-custom-green font-bold">{years}</p>
+          <h5 className="text-xl font-bold">{role}</h5>
+          <p className="text-gray-500">{where}</p>
         </div>
       </div>
     );

@@ -2,7 +2,7 @@ const ContactSection = () => {
     return (
       <div className="mx-25 my-20">
         <div className="mx-auto justify-items-center text-center">
-          <h2 className="text-7xl font-bold text-custom-green">Let's Talk</h2>
+          <h2 className="text-5xl font-bold text-custom-green">Let's Talk</h2>
           <h4 className="text-2xl mt-5 text-gray-500 w-5xl">
             Let's Chat ! About your tech journey, collaborate with me , review
             my projects & portfolio, Are discus will happens in the future tech

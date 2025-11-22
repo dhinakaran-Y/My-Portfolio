@@ -2,67 +2,79 @@
   {
     "id": 1,
     "name": "React",
-    "path": "./Images/tech-stacks/react-icon.png",
-    "summa":"https://github.com/dhinakaran-Y.png"
-  },
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "summa":"https://github.com/dhinakaran-Y.png","known":40
+    },
   {
     "id": 2,
     "name": "Javascript",
-    "path": "./Images/tech-stacks/javascript-icon.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "known": 80
   },
   {
     "id": 3,
     "name": "tailwindcss",
-    "path": "./Images/tech-stacks/tailwind_css_Logo.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    "known": 70
   },
   {
     "id": 4,
     "name": "bootstrap",
-    "path": "./Images/tech-stacks/bootstrap_logo.svg.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg",
+    "known": 70
   },
   {
     "id": 5,
     "name": "Sass",
-    "path": "./Images/tech-stacks/sass_logo.svg.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+    "known": 40
   },
   {
     "id": 6,
     "name": "Figma",
-    "path": "./Images/tech-stacks/Figma-logo.svg.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+    "known": 30
   },
   {
     "id": 7,
     "name": "Firebase",
-    "path": "./Images/tech-stacks/firebase-logo-icon-hd.webp"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
+    "known": 30
   },
   {
     "id": 8,
     "name": "Git",
-    "path": "./Images/tech-stacks/git-icon.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "known": 40
   },
   {
     "id": 9,
     "name": "Mysql",
-    "path": "./Images/tech-stacks/mysql-logo.svg"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+    "known": 20
   },
   {
     "id": 10,
     "name": "Python",
-    "path": "./Images/tech-stacks/python-logo.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
+    "known": 20
   },
   {
     "id": 11,
     "name": "C++",
-    "path": "./Images/tech-stacks/c++_logo.svg.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg",
+    "known": 20
   },
   {
     "id": 12,
     "name": "HTML",
-    "path": "./Images/tech-stacks/html_logo.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg",
+    "known": 90
   },
   {
     "id": 13,
     "name": "CSS",
-    "path": "./Images/tech-stacks/css_logo.png"
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg",
+    "known": 90
   }
 ]
