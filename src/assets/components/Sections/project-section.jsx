@@ -18,6 +18,7 @@ const ProjectSection = () => {
                 live={projects.liveLink}
                 source={projects.sourceLink}
                 key={index}
+                projectNo={projects.id}
               />
             );
           })}

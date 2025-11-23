@@ -10,7 +10,7 @@ const SkillsSection = () => {
    const [screenY, setScreenY] = useState();
 
    window.addEventListener("scroll", () =>{
-    console.log(pageYOffset);
+    // console.log(pageYOffset);
      setScreenY(pageYOffset);
    });
 

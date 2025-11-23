@@ -6,10 +6,21 @@ const defaultTitle = "Project Title"
 const defaultDesc = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates non hic tenetur delectus rem quo nihil cumque? Voluptatibus magnam, fuga recusandae ipsum illum odit consequuntur laboriosam"
 const defaultStacks = ["#javascript", "#Tailwindcss", "#TMDB-api"];
 
-const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = defaultDesc , usedStacks = defaultStacks , live , source }) => {
+const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = defaultDesc , usedStacks = defaultStacks , live , source , projectNo }) => {
   const [visible, setVisible] = useState(false);
 
-  const minScreenY = 1500;
+  let minScreenY = 1500;
+
+  function minScreenYChange(projectNo) {
+    if ((projectNo === 1)) {
+      minScreenY = 1400;
+    } else if ((projectNo === 2)) {
+      minScreenY = 1750;
+    }
+  }
+
+  minScreenYChange(projectNo)
+  
 
   const [screenY, setScreenY] = useState();
 
@@ -19,7 +30,7 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
     if (screenY > minScreenY) {
       setVisible(true);
     }
-  }, [screenY, visible]);
+  }, [screenY, visible ,minScreenY]);
 
   return (
     <div className="grid grid-cols-2 gap-x-20 mx-auto w-[90%] overflow-hidden">
@@ -31,9 +42,10 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
         alt="movie"
       />
       <div
-        className={`transition-all duration-2000 transform ${
-          visible ? "translate-x-0 opacity-100" : "translate-x-100 opacity-0"
-        }`}>
+        // className={`transition-all duration-2000 transform ${
+        //   visible ? "translate-x-0 opacity-100" : "translate-x-100 opacity-0"
+        // }`}
+        >
         <h3 className="text-3xl font-bold text-custom-green">{title}</h3>
         <p className="text-xl text-gray-500 my-3 leading-relaxed">{desc}</p>
         <div className="space-x-3 mt-6">
