@@ -12,9 +12,9 @@ const TheNavbar = () => {
     
     return (
       <>
-        <nav className="navbar h-1/12 fixed z-50 top-0 px-20 border-b-2 bg-black border-b-gray-600">
+        <nav className="navbar h-1/12 fixed z-50 top-0 px-20 max-sm:px-7 border-b-2 bg-black border-b-gray-600">
           <div className="navbar-start">
-            <Link to={"#"} className="text-4xl font-bold text-custom-green">DHINAKARAN-Y</Link>
+            <Link to={"#"} className="max-sm:text-xs 2xl:text-4xl font-bold text-custom-green">DHINAKARAN-Y</Link>
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className={`menu flex space-x-8 px-1`}>

@@ -22,7 +22,10 @@
 }
 
 .outline-btn{
-  @apply text-custom-green border-2 border-custom-green px-5 py-2 font-bold rounded-2xl mx-auto hover:bg-custom-green hover:text-white transform transition-all duration-500;
+  @apply text-custom-green border-2 border-custom-green px-5 py-2 font-bold rounded-2xl mx-auto 
+  hover:bg-custom-green hover:text-white transform transition-all duration-500 
+  /* sm */
+  max-sm:text-sm max-sm:py-1 max-sm:px-3 sm:max-md:rounded-none max-sm:border;
 }
 
 /* auto scroll */

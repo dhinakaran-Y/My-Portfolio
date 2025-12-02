@@ -18,7 +18,8 @@ const TheStudyCard = ({role = "Student" , where = "perambalur" , years = "2020 -
      }, [screenY, visible]);
   
     return (
-      <div className="flex gap-x-7 items-center overflow-hidden">
+      <div
+        className={`flex gap-x-7 items-center overflow-hidden ${`max-sm:gap-x-3`}`}>
         <div
           className={`bg-custom-green inline-block rounded-full p-1 transition-all duration-2000 transform ${
             visible ? "opacity-100" : "opacity-0"
@@ -35,10 +36,14 @@ const TheStudyCard = ({role = "Student" , where = "perambalur" , years = "2020 -
           </svg>
         </div>
         <div
-          className={`transition-all duration-2000 transform ${visible ? "translate-x-0 opacity-100" : "translate-x-50 opacity-0"}`}>
-          <p className="text-custom-green font-bold">{years}</p>
-          <h5 className="text-xl font-bold">{role}</h5>
-          <p className="text-gray-500">{where}</p>
+          className={`transition-all duration-2000 transform ${
+            visible ? "translate-x-0 opacity-100" : "translate-x-50 opacity-0"
+          }`}>
+          <p className={`text-custom-green font-bold ${`max-sm:text-sm`}`}>
+            {years}
+          </p>
+          <h5 className={`text-xl font-bold ${`max-sm:text-base`}`}>{role}</h5>
+          <p className={`text-gray-500 ${`max-sm:text-xs`}`}>{where}</p>
         </div>
       </div>
     );

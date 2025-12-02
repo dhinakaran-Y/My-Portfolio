@@ -33,7 +33,7 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
   }, [screenY, visible ,minScreenY]);
 
   return (
-    <div className="grid grid-cols-2 gap-x-20 mx-auto w-[90%] overflow-hidden">
+    <div className={`grid grid-cols-2 gap-x-20 mx-auto w-[90%] overflow-hidden ${`max-sm:grid-cols-1 max-sm:gap-y-10 max-sm:w-full`}`}>
       <img
         className={`transition-all duration-2000 transform ${
           visible ? "translate-x-0 opacity-100" : "-translate-x-100 opacity-0"
@@ -46,18 +46,18 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
         //   visible ? "translate-x-0 opacity-100" : "translate-x-100 opacity-0"
         // }`}
         >
-        <h3 className="text-3xl font-bold text-custom-green">{title}</h3>
-        <p className="text-xl text-gray-500 my-3 leading-relaxed">{desc}</p>
-        <div className="space-x-3 mt-6">
+        <h3 className={`text-3xl font-bold text-custom-green ${`max-sm:text-xl`}`}>{title}</h3>
+        <p className={`text-xl text-gray-500 my-3 leading-relaxed ${`max-sm:text-base`}`}>{desc}</p>
+        <div className={`space-x-2 mt-6`}>
           {usedStacks.map((stack, index) => {
             return <TheStackBadge stack={stack} key={index} />;
           })}
         </div>
-        <div className="ml-1 mt-8 flex gap-5 content-center">
+        <div className={`ml-1 mt-8 flex gap-5 content-center`}>
           <a
             href={live}
             target="blank"
-            className="flex text-gray-500 hover:text-white transform transition-all duration-500">
+            className={`flex text-gray-500 hover:text-white transform transition-all duration-500 `}>
             Website
             <svg
               xmlns="http://www.w3.org/2000/svg"

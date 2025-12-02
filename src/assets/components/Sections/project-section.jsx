@@ -3,11 +3,11 @@ import projectsData from "../../data/projects-data.json"
 
 const ProjectSection = () => {
     return (
-      <div className="mx-25 my-30">
-        <div className="mx-auto mb-20 w-fit text-center">
-          <h2 className="text-5xl font-bold text-custom-green">My Projects</h2>
+      <div className={`mx-25 my-30 ${`max-sm:mx-15`}`}>
+        <div className={`mx-auto mb-20 w-fit text-center ${`max-sm:mb-10`}`}>
+          <h2 className={`text-5xl font-bold text-custom-green ${`max-sm:text-3xl max-sm:w-41`}`}>My Projects</h2>
         </div>
-        <div className="*:mb-20">
+        <div className={`*:mb-20`}>
           {projectsData.map((projects , index) => {
             return (
               <TheProjectCard
@@ -22,7 +22,6 @@ const ProjectSection = () => {
               />
             );
           })}
-          
         </div>
       </div>
     );

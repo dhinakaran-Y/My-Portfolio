@@ -11,15 +11,15 @@ import TheTopNavigateBtn from "../components/TheTopNavigateBtn";
 const HomePage = () => {  
   return (
     <section>
-      <TheLeftLinkSection />
-      <TheRightLinkSection />
+      <TheLeftLinkSection className="max-md:hidden"/>
+      <TheRightLinkSection/>
       <ProfileSection />
       <AboutSection />
       <SkillsSection />
       <ProjectSection />
       <AcademicsSection />
       <ContactSection />
-      <TheTopNavigateBtn/>
+      <TheTopNavigateBtn />
     </section>
   );
 };

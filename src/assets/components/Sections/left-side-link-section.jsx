@@ -1,9 +1,9 @@
-const TheLeftLinkSection = () => {
+const TheLeftLinkSection = ({className}) => {
     return (
       <>
         <div
           id="link-div"
-          className="fixed z-40 bottom-10 left-0 flex flex-col items-center space-y-15 p-3 rounded-xl *:bg-black **:fill-gray-500 *:hover:**:fill-white **:transform **:transition-all **:duration-500">
+          className={`fixed z-40 bottom-10 left-0 flex flex-col items-center space-y-15 p-3 rounded-xl *:bg-black **:fill-gray-500 *:hover:**:fill-white **:transform **:transition-all **:duration-500 ${className}`}>
           <a
             href="https://github.com/dhinakaran-Y"
             title="github"
@@ -71,7 +71,7 @@ const TheLeftLinkSection = () => {
             </svg>
           </a>
         </div>
-        <hr className="fixed left-[22px] bottom-0 h-[328px] border-l-3 border-gray-500 z-30" />
+        <hr className={`fixed left-[22px] bottom-0 h-[328px] border-l-3 border-gray-500 z-30 ${className}`}/>
       </>
     );
 }
