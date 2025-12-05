@@ -17,19 +17,19 @@ const AboutSection = () => {
 
   return (
     <div
-      className={`mx-25 my-20 overflow-hidden ${`max-sm:w-90 max-sm:mx-auto`}`}>
+      className={`${`xl:mx-25 xl:my-20`} ${`lg:mx-10 lg:my-20`} ${`sm:mx-auto sm:my-20`} overflow-hidden ${`max-sm:w-90 max-sm:mx-auto max-sm:my-10`}`}>
       <div
-        className={`mx-auto text-[300px] font-extrabold w-[70vw]  ${`max-sm:text-[100px] max-sm:w-full max-sm:m-0 max-sm:mx-auto`} relative text-custom-green/20 transition-all duration-3000 transform ${
+        className={`${`xl:mx-auto xl:text-[300px] xl:w-6xl`} ${`lg:mx-auto lg:text-[180px] lg:w-2xl`} font-extrabold ${`max-sm:text-[100px] max-sm:w-full max-sm:mx-3`} ${`sm:w-md sm:text-[125px] sm:mx-auto`} relative text-custom-green/20 transition-all duration-3000 transform ${
           visible ? "translate-x-0 opacity-100" : "-translate-x-100 opacity-20"
         }`}>
         ABOUT
         <div
-          className={`absolute ml-5 text-white inset-y-37 text-4xl font-normal w-[70vw] leading-relaxed ${`max-sm:m-0 max-sm:inset-0 max-sm:text-sm max-sm:w-[90%] max-sm:inset-y-5  max-sm:inset-x-1/12`} transition-all duration-3000 delay-100 transform ${
+          className={`absolute ${`xl:ml-5 xl:inset-y-37 xl:text-4xl xl:w-6xl xl:leading-relaxed`} ${`lg:inset-y-17 lg:text-2xl lg:w-2xl lg:leading-relaxed`} text-white font-normal ${`max-sm:m-0 max-sm:inset-0 max-sm:text-sm max-sm:w-[340px] max-sm:inset-y-9`} ${`sm:m-0 sm:inset-0 sm:text-base sm:w-md sm:inset-y-12.5 sm:inset-x-1`} transition-all duration-3000 delay-100 transform ${
             visible ? "translate-x-0 opacity-100" : "translate-x-300 opacity-20"
           }`}>
           I'm a passionate front-end developer with a Bachelor's degree in
-          Computer Science and Engineering.I'm eager to work in industrial
-          companies.I'm a good team player,and my daily hobby is upskilling.
+          Computer Science and Engineering. I'm eager to work in industrial
+          companies. I'm a good team player, and my daily hobby is upskilling.
         </div>
       </div>
     </div>

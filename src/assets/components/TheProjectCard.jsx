@@ -33,7 +33,8 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
   }, [screenY, visible ,minScreenY]);
 
   return (
-    <div className={`grid grid-cols-2 gap-x-20 mx-auto w-[90%] overflow-hidden ${`max-sm:grid-cols-1 max-sm:gap-y-10 max-sm:w-full`}`}>
+    <div
+      className={`grid mx-auto ${`xl:grid-cols-2 xl:gap-x-20 xl:w-[90%]`} ${`lg:grid-cols-2 lg:gap-x-10 lg:w-[90%]`} overflow-hidden ${`sm:grid-cols-1 sm:gap-y-3 sm:w-full`} ${`md:grid-cols-2 md:gap-x-5 md:w-[90%]`} ${`max-sm:grid-cols-1 max-sm:gap-y-10 max-sm:w-full`}`}>
       <img
         className={`transition-all duration-2000 transform ${
           visible ? "translate-x-0 opacity-100" : "-translate-x-100 opacity-0"
@@ -42,18 +43,26 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
         alt="movie"
       />
       <div
-        // className={`transition-all duration-2000 transform ${
-        //   visible ? "translate-x-0 opacity-100" : "translate-x-100 opacity-0"
-        // }`}
-        >
-        <h3 className={`text-3xl font-bold text-custom-green ${`max-sm:text-xl`}`}>{title}</h3>
-        <p className={`text-xl text-gray-500 my-3 leading-relaxed ${`max-sm:text-base`}`}>{desc}</p>
-        <div className={`space-x-2 mt-6`}>
+      // className={`transition-all duration-2000 transform ${
+      //   visible ? "translate-x-0 opacity-100" : "translate-x-100 opacity-0"
+      // }`}
+      >
+        <h3
+          className={`${`xl:text-3xl`} ${`lg:text-2xl`} font-bold text-custom-green ${`sm:text-2xl`} ${`md:text-xl`} ${`max-sm:text-xl`}`}>
+          {title}
+        </h3>
+        <p
+          className={`text-gray-500 leading-relaxed ${`xl:text-xl xl:my-3`} ${`lg:text-lg lg:my-2`} ${`sm:text-base`} ${`md:my-1`} ${`max-sm:text-base`}`}>
+          {desc}
+        </p>
+        <div
+          className={`space-x-2 xl:mt-6 lg:mt-3 ${`sm:mt-3`} md:mt-0 ${`max-sm:mt-3`}`}>
           {usedStacks.map((stack, index) => {
             return <TheStackBadge stack={stack} key={index} />;
           })}
         </div>
-        <div className={`ml-1 mt-8 flex gap-5 content-center`}>
+        <div
+          className={`ml-1 mt-8 max-sm:mt-3 md:mt-2 flex gap-5 content-center`}>
           <a
             href={live}
             target="blank"

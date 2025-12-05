@@ -1,25 +1,17 @@
-import { useEffect, useState } from "react";
-import TheTechStackPill from "../TheTechStackPill";
-import stackData from "../../data/stacks-data.json";
+import { useState, useEffect } from "react";
+import TheTechStackPill from "../components/TheTechStackPill";
+import stackData from "../data/stacks-data.json";
 
-const SkillsSection = () => {
-   const [visible, setVisible] = useState(false);
+const SkillsPage = () => {
+  const [visible, setVisible] = useState(false);
 
-   const minScreenY = 800;
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 1000);
 
-   const [screenY, setScreenY] = useState();
-
-   window.addEventListener("scroll", () =>{
-    // console.log(pageYOffset);
-     setScreenY(pageYOffset);
-   });
-
-   useEffect(() => {
-     if (screenY > minScreenY) {
-       setVisible(true);
-     }
-   }, [screenY, visible]);
-
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div
@@ -81,5 +73,4 @@ const SkillsSection = () => {
   );
 };
 
-
-export default SkillsSection
+export default SkillsPage;

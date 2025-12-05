@@ -1,25 +1,26 @@
 const ContactSection = () => {
     return (
-      <div className={`mx-25 my-20 ${`max-sm:mx-0`}`}>
+      <div
+        className={`overflow-x-hidden my-15 ${`xl:mx-25 xl:my-20`} ${`sm:mx-0`} ${`max-sm:mx-0`}`}>
         <div className="mx-auto justify-items-center text-center">
           <h2
-            className={`text-5xl font-bold text-custom-green ${`max-sm:text-3xl`}`}>
+            className={`xl:text-5xl font-bold text-custom-green ${`sm:text-3xl`} ${`max-sm:text-3xl`}`}>
             Let's Talk
           </h2>
           <h4
-            className={`text-2xl mt-5 text-gray-500 w-5xl ${`max-sm:w-[70vw] max-sm:text-sm`}`}>
+            className={`${`xl:text-2xl xl:mt-5 xl:w-5xl`} text-gray-500 mt-5 ${`sm:w-[70vw] sm:text-sm`} ${`max-sm:w-[70vw] max-sm:text-sm`}`}>
             Let's Chat ! About your tech journey, collaborate with me , review
             my projects & portfolio, Are discus will happens in the future tech
             world. Feel free to chat with me 😊...
           </h4>
         </div>
-        <div className={`w-full flex justify-center my-8 ${`max-sm:my-4`}`}>
+        <div
+          className={`flex justify-center ${`xl:w-full xl:my-8`} ${`sm:my-4`} ${`max-sm:my-4`}`}>
           <a href="mailto:dhinakaran.y.dhina@gmail.com">
-            <span
-              className={`outline-btn flex items-center`}>
+            <span className={`outline-btn flex items-center`}>
               Start mail
               <svg
-                className={`ml-2 ${`max-sm:ml-1.5 max-sm:w-4`}`}
+                className={`ml-2 ${`sm:ml-1.5 sm:w-4`} ${`max-sm:ml-1.5 max-sm:w-4`}`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="1.3rem"
                 height="1.3rem"

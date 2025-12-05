@@ -1,7 +1,7 @@
-import TheStudyCard from "../TheStudyCard";
-import academicData from "../../data/academics-data.json";
+import TheStudyCard from "../components/TheStudyCard";
+import academicData from "../data/academics-data.json";
 
-const AcademicsSection = () => {
+const AcademicsPage = () => {
   return (
     <div
       className={`justify-self-center ${`xl:mx-25 xl:my-30`} ${`sm:mx-20`} ${`max-sm:mx-20`}`}>
@@ -33,4 +33,4 @@ const AcademicsSection = () => {
   );
 };
 
-export default AcademicsSection
+export default AcademicsPage

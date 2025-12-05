@@ -1,7 +1,7 @@
 const TheTopNavigateBtn = () => {
     const goToTop = () => {
       document
-        .querySelector("#profileSection")
+        .querySelector("#top-none-div")
         ?.scrollIntoView({ behavior: "smooth" });
     };
     return (

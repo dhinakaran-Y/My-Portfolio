@@ -3,12 +3,17 @@ import projectsData from "../../data/projects-data.json"
 
 const ProjectSection = () => {
     return (
-      <div className={`mx-25 my-30 ${`max-sm:mx-15`}`}>
-        <div className={`mx-auto mb-20 w-fit text-center ${`max-sm:mb-10`}`}>
-          <h2 className={`text-5xl font-bold text-custom-green ${`max-sm:text-3xl max-sm:w-41`}`}>My Projects</h2>
+      <div
+        className={`${`xl:mx-auto xl:w-7xl xl:my-30`} ${`lg:mx-15 lg:my-30`} ${`sm:mx-20`} ${`md:mx-10 md:my-30`} ${`max-sm:mx-15`}`}>
+        <div
+          className={`mx-auto ${`xl:mb-20`} ${`lg:mb-15`} w-fit text-center mb-10`}>
+          <h2
+            className={`${`xl:text-5xl`} ${`lg:text-4xl`} font-bold text-center text-custom-green ${`sm:text-3xl`} ${`md:text-3xl`} ${`max-sm:text-3xl`}`}>
+            My Projects
+          </h2>
         </div>
         <div className={`*:mb-20`}>
-          {projectsData.map((projects , index) => {
+          {projectsData.map((projects, index) => {
             return (
               <TheProjectCard
                 imgPath={projects.imgPath}

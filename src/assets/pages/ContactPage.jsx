@@ -1,0 +1,67 @@
+import { useState, useEffect } from "react";
+
+const ContactPage = () => {
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setVisible(true);
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }, []);
+    
+    return (
+      <>
+        <div
+          className={`overflow-x-hidden my-15 ${`xl:mx-25 xl:my-20`} ${`sm:mx-0`} ${`max-sm:mx-0`}`}>
+          <div className="mx-auto justify-items-center text-center">
+            <h2
+              className={`xl:text-5xl font-bold text-custom-green ${`sm:text-3xl`} ${`max-sm:text-3xl`}`}>
+              Let's Talk
+            </h2>
+            <h4
+              className={`transition-all duration-1500 transform ${
+                visible
+                  ? "translate-x-0 opacity-100"
+                  : "translate-x-40 opacity-0"
+              } ${`xl:text-2xl xl:mt-5 xl:w-5xl`} text-gray-500 mt-5 ${`sm:w-[70vw] sm:text-sm`} ${`max-sm:w-[70vw] max-sm:text-sm`}`}>
+              Let's Chat ! About your tech journey, collaborate with me , review
+              my projects & portfolio, Are discus will happens in the future
+              tech world. Feel free to chat with me 😊...
+            </h4>
+          </div>
+          <div
+            className={`flex justify-center ${`xl:w-full xl:my-8`} ${`sm:my-4`} ${`max-sm:my-4`} transition-all duration-1500 transform ${
+              visible ? "translate-x-0 opacity-100" : "translate-x-40 opacity-0"
+            }`}>
+            <a href="mailto:dhinakaran.y.dhina@gmail.com">
+              <span className={`outline-btn flex items-center`}>
+                Start mail
+                <svg
+                  className={`ml-2 ${`sm:ml-1.5 sm:w-4`} ${`max-sm:ml-1.5 max-sm:w-4`}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.3rem"
+                  height="1.3rem"
+                  viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2">
+                    <path d="M10.5 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4" />
+                    <path d="m3 7l9 6l2.983-1.989L21 7m-3 15l3.35-3.284a2.143 2.143 0 0 0 .005-3.071a2.24 2.24 0 0 0-3.129-.006l-.224.22l-.223-.22a2.24 2.24 0 0 0-3.128-.006a2.143 2.143 0 0 0-.006 3.071z" />
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+        {/* gap */}
+        <div className="w-full h-44"></div>
+      </>
+    );
+}
+
+export default ContactPage
