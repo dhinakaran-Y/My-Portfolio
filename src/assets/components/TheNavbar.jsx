@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const TheNavbar = () => {
     const pageLocation = useLocation().pathname;
 
-    useEffect(() => {
-            console.log(pageLocation);
-    },[pageLocation ])
+    // useEffect(() => {
+    //         console.log(pageLocation);
+    // },[pageLocation ])
     
     return (
       <>

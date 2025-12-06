@@ -25,7 +25,7 @@ const ContactPage = () => {
                 visible
                   ? "translate-x-0 opacity-100"
                   : "translate-x-40 opacity-0"
-              } ${`xl:text-2xl xl:mt-5 xl:w-5xl`} text-gray-500 mt-5 ${`sm:w-[70vw] sm:text-sm`} ${`max-sm:w-[70vw] max-sm:text-sm`}`}>
+              } ${`xl:text-2xl xl:mt-10 xl:w-5xl`} text-gray-500 mt-5 ${`sm:w-[70vw] sm:text-sm`} ${`max-sm:w-[70vw] max-sm:text-sm`}`}>
               Let's Chat ! About your tech journey, collaborate with me , review
               my projects & portfolio, Are discus will happens in the future
               tech world. Feel free to chat with me 😊...

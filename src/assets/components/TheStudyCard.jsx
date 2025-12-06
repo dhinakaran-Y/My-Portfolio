@@ -1,21 +1,31 @@
 import { useState , useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const TheStudyCard = ({role = "Student" , where = "perambalur" , years = "2020 - 2021"}) => {
     const [visible, setVisible] = useState(false);
+    const pageLocation = useLocation().pathname;
+    const minScreenY = 2500;
   
-     const minScreenY = 2500;
-  
-     const [screenY, setScreenY] = useState();
+    const [screenY, setScreenY] = useState();
   
      window.addEventListener("scroll", () =>{
        setScreenY(pageYOffset);
      });
   
      useEffect(() => {
-       if (screenY > minScreenY) {
-         setVisible(true);
-       }
-     }, [screenY, visible]);
+      if(pageLocation === "/"){
+        if (screenY > minScreenY) {
+          setVisible(true);
+        }   
+      }
+      else if(pageLocation === '/academics'){
+        const timer = setTimeout(() => {
+          setVisible(true);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+      }
+     }, [screenY, visible , pageLocation]);
   
     return (
       <div

@@ -1,5 +1,6 @@
 import TheStackBadge from "./TheStackBadge";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const defaultImg = "https://github.com/dhinakaran-Y.png"
 const defaultTitle = "Project Title"
@@ -8,14 +9,25 @@ const defaultStacks = ["#javascript", "#Tailwindcss", "#TMDB-api"];
 
 const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = defaultDesc , usedStacks = defaultStacks , live , source , projectNo }) => {
   const [visible, setVisible] = useState(false);
+  const pageLocation = useLocation().pathname;
 
   let minScreenY = 1500;
 
   function minScreenYChange(projectNo) {
-    if ((projectNo === 1)) {
-      minScreenY = 1400;
-    } else if ((projectNo === 2)) {
-      minScreenY = 1750;
+    if(pageLocation === '/' | '#/' ){
+      console.log(pageLocation);
+      if (projectNo === 1) {
+        minScreenY = 1400;
+      } else if (projectNo === 2) {
+        minScreenY = 1750;
+      }
+    }
+    else if(pageLocation === '/project'){
+        const timer = setTimeout(() => {
+          setVisible(true);
+        }, 1000);
+
+        return () => clearTimeout(timer);
     }
   }
 
