@@ -11,7 +11,7 @@ import TheTopNavigateBtn from "../components/TheTopNavigateBtn";
 const HomePage = () => {  
   return (
     <section>
-      <TheLeftLinkSection className="max-md:hidden"/>
+      <TheLeftLinkSection/>
       <TheRightLinkSection/>
       <ProfileSection />
       <AboutSection />
