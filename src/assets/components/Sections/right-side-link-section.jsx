@@ -5,7 +5,7 @@ const TheRightLinkSection = () => {
       <a
         href="mailto:dhinakaran.y.dhina@gmail.com"
         target="blank"
-        className="fixed rotate-90 z-30 text-gray-500 top-71 -right-31 hover:text-white hover:cursor-pointer tracking-widest transform transition-all duration-500 max-md:hidden">
+        className="fixed rotate-90 z-30 text-gray-500 top-71 -right-29 hover:text-white hover:cursor-pointer tracking-widest transform transition-all duration-500 max-md:hidden">
         dhinakaran.y.dhina14@gmail.com
       </a>
     </>
