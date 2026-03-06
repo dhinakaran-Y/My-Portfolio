@@ -18,20 +18,20 @@ const ProfileSection = () => {
 
   return (
     <div
-      className={`${`xl:mx-auto xl:w-7xl xl:flex xl:flex-row xl:mb-5 xl:mt-2 xl:space-x-50`} ${`lg:justify-self-center lg:mx-auto lg:items-center lg:flex lg:flex-row lg:mb-5 lg:mt-2 lg:space-x-30`} overflow-hidden ${`sm:mx-5 sm:mb-10 sm:flex-col sm:space-x-0`} ${`max-sm:mx-5 max-sm:mb-10 max-sm:flex-col max-sm:space-x-0`}`}
+      className={`${`xl:mx-auto xl:w-6xl xl:flex xl:flex-row xl:mt-10 xl:space-x-60`} ${`lg:justify-self-center lg:mx-auto lg:items-center lg:flex lg:flex-row lg:mb-5 lg:mt-2 lg:space-x-30`} overflow-hidden ${`sm:mx-5 sm:mb-10 sm:flex-col sm:space-x-0`} ${`max-sm:mx-5 max-sm:mb-10 max-sm:flex-col max-sm:space-x-0`}`}
       id="profileSection">
       <div
         className={`xl:flex transition-all duration-1500 transform ${
           visible ? "translate-x-0 opacity-100" : "-translate-x-40 opacity-0"
         }`}>
         <img
-          className={`${`lg:w-64`} ${`xl:w-100`} flex-none ${`sm:w-60 sm:mx-auto sm:p-5`} ${`max-sm:w-60 max-sm:mx-auto max-sm:p-5`}`}
-          src="Images/profile.png"
+          className={`${`lg:w-64`} ${`xl:w-100`} object-cover rounded-full border-5 hover:scale-95 transition-all duration-300 border-custom-green  p-1 flex-none ${`sm:w-60 sm:mx-auto`} ${`max-sm:w-60 max-sm:mx-auto`}`}
+          src="Images/profile-4.png"
           alt="dhina-profile-img"
         />
       </div>
       <div
-        className={`${`xl:w-[80vw] xl:space-y-3 xl:mt-30`} ${`lg:w-[40vw] lg:space-y-1 lg:mt-15`} transition-all duration-1500 transform ${
+        className={`${`xl:w-[80vw] xl:space-y-3 xl:mt-10`} ${`lg:w-[40vw] lg:space-y-1 lg:mt-15`} transition-all duration-1500 transform ${
           visible ? "translate-x-0 opacity-100" : "translate-x-40 opacity-0"
         } ${`sm:space-x-0 sm:my-0 sm:w-[90vw] sm:mx-auto sm:text-center`} lg:text-start ${`max-sm:space-x-0 max-sm:my-0 max-sm:w-[90vw] max-sm:mx-auto max-sm:text-center`}`}>
         <h2
