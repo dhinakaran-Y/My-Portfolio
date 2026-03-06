@@ -19,7 +19,7 @@ const AboutSection = () => {
     <div
       className={`${`xl:mx-25 xl:my-20`} ${`lg:mx-10 lg:my-20`} ${`sm:mx-auto sm:my-20`} overflow-hidden ${`max-sm:w-90 max-sm:mx-auto max-sm:my-10`}`}>
       <div
-        className={`${`xl:mx-auto xl:text-[300px] xl:w-6xl`} font-sans ${`lg:mx-auto lg:text-[180px] lg:w-2xl`} font-extrabold ${`max-sm:text-[100px] max-sm:w-full max-sm:mx-3`} ${`sm:w-md sm:text-[125px] sm:mx-auto`} relative text-custom-green/20 transition-all duration-3000 transform ${
+        className={`${`xl:mx-auto xl:text-[300px] xl:w-268`} font-sans ${`lg:mx-auto lg:text-[180px] lg:w-2xl`} font-extrabold ${`max-sm:text-[100px] max-sm:w-full max-sm:mx-3`} ${`sm:w-md sm:text-[125px] sm:mx-auto`} relative text-custom-green/20 transition-all duration-3000 transform ${
           visible ? "translate-x-0 opacity-100" : "-translate-x-100 opacity-20"
         }`}>
         ABOUT
