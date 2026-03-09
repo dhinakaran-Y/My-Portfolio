@@ -31,7 +31,7 @@ const ProfileSection = () => {
         />
       </div>
       <div
-        className={`${`xl:w-100 xl:space-y-3 xl:mt-2`} ${`lg:w-[40vw] lg:mx-0 lg:space-y-1 lg:mt-2`} transition-all duration-1500 transform ${
+        className={`${`xl:w-100 xl:space-y-3`} ${`lg:w-[40vw] lg:mx-0 lg:space-y-1 lg:my-auto`} transition-all duration-1500 transform ${
           visible ? "translate-x-0 opacity-100" : "translate-x-40 opacity-0"
         } ${`sm:space-x-0 sm:w-[90vw] sm:mx-auto sm:text-center`} mt-10 lg:text-start ${`max-sm:space-x-0 max-sm:w-[90vw] max-sm:mx-auto max-sm:text-center`}`}>
         <h2
