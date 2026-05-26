@@ -2,37 +2,44 @@ import TheStackBadge from "./TheStackBadge";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-const defaultImg = "https://github.com/dhinakaran-Y.png"
-const defaultTitle = "Project Title"
-const defaultDesc = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates non hic tenetur delectus rem quo nihil cumque? Voluptatibus magnam, fuga recusandae ipsum illum odit consequuntur laboriosam"
+const defaultImg = "https://github.com/dhinakaran-Y.png";
+const defaultTitle = "Project Title";
+const defaultDesc =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates non hic tenetur delectus rem quo nihil cumque? Voluptatibus magnam, fuga recusandae ipsum illum odit consequuntur laboriosam";
 const defaultStacks = ["#javascript", "#Tailwindcss", "#TMDB-api"];
 
-const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = defaultDesc , usedStacks = defaultStacks , live , source , projectNo }) => {
+const TheProjectCard = ({
+  imgPath = defaultImg,
+  title = defaultTitle,
+  desc = defaultDesc,
+  usedStacks = defaultStacks,
+  live,
+  source,
+  projectNo,
+}) => {
   const [visible, setVisible] = useState(false);
   const pageLocation = useLocation().pathname;
 
   let minScreenY = 1500;
 
   function minScreenYChange(projectNo) {
-    if(pageLocation === '/' | '#/' ){
+    if ((pageLocation === "/") | "#/") {
       console.log(pageLocation);
       if (projectNo === 1) {
         minScreenY = 1400;
       } else if (projectNo === 2) {
         minScreenY = 1750;
       }
-    }
-    else if(pageLocation === '/project'){
-        const timer = setTimeout(() => {
-          setVisible(true);
-        }, 1000);
+    } else if (pageLocation === "/project") {
+      const timer = setTimeout(() => {
+        setVisible(true);
+      }, 1000);
 
-        return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
     }
   }
 
-  minScreenYChange(projectNo)
-  
+  minScreenYChange(projectNo);
 
   const [screenY, setScreenY] = useState();
 
@@ -42,7 +49,7 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
     if (screenY > minScreenY) {
       setVisible(true);
     }
-  }, [screenY, visible ,minScreenY]);
+  }, [screenY, visible, minScreenY]);
 
   return (
     <div
@@ -63,10 +70,37 @@ const TheProjectCard = ({imgPath = defaultImg , title = defaultTitle , desc = de
           className={`${`xl:text-3xl`} ${`lg:text-2xl`} font-bold text-custom-green ${`sm:text-2xl`} ${`md:text-xl`} ${`max-sm:text-xl`}`}>
           {title}
         </h3>
-        <p
-          className={`text-gray-500 leading-relaxed ${`xl:text-xl xl:my-3`} ${`lg:text-lg lg:my-2`} ${`sm:text-base`} ${`md:my-1`} ${`max-sm:text-base`}`}>
-          {desc}
-        </p>
+
+        {/* desc div */}
+        <div className="">
+          {/* Hidden Checkbox */}
+          <input
+            type="checkbox"
+            id={`disc-toggler${projectNo}`}
+            className="peer hidden"
+          />
+
+          {/* description */}
+          <p
+            className={`text-gray-500 leading-relaxed peer-checked:line-clamp-none line-clamp-4 xl:text-xl xl:my-3 lg:text-lg lg:my-2 sm:text-base md:my-1 max-sm:text-base`}>
+            {desc}
+          </p>
+
+          {/* Label styled as a button */}
+          <label
+            htmlFor={`disc-toggler${projectNo}`}
+            className="group ml-1 inline-block text-custom-green hover:underline cursor-pointer select-none">
+            {/* If the input peer is checked, hide 'Read More' */}
+            <span className="peer-checked:hidden group-peer-checked:hidden">
+              Read More
+            </span>
+
+            {/* If the input peer is checked, show 'Read Less' */}
+            <span className="hidden peer-checked:inline group-peer-checked:inline">
+              Read Less
+            </span>
+          </label>
+        </div>
         <div
           className={`space-x-2 xl:mt-6 lg:mt-3 ${`sm:mt-3`} md:mt-0 ${`max-sm:mt-3`}`}>
           {usedStacks.map((stack, index) => {
