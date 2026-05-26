@@ -1,6 +1,15 @@
 [
-    {
+  {
       "id" : 1,
+      "imgPath":"./Images/projects/MMC.png",
+      "liveLink":"https://mmc-my-movies-collections-frontend.vercel.app/",
+      "sourceLink":"https://github.com/dhinakaran-Y/MMC-my-movies-collection",
+      "title":"MMC - My Movies Collection",
+      "desc":"MMC is a personal digital library created to store your watch list movies in a digital formate with custom categorization. It's a web application built using the MERN stack (MongoDB, Express.js, Next.js, Node.js) and Tailwind CSS for styling. The application allows users to create an account, log in, and manage their movie collection. Users can add movies to their collection, categorize them based on their preferences, and view details about each movie. The backend is powered by Node.js and Express.js, while the frontend is built with next.js and styled using Tailwind CSS.",
+      "usedStacks":["Next.js", "Node.js", "Express.js", "MongoDB", "Tailwindcss" , "TMDB-api"]
+    },
+    {
+      "id" : 2,
       "imgPath":"./Images/projects/aesthetic-movies-img.png",
       "liveLink":"https://dhinakaran-y.github.io/Aesthetic-Movies-App/",
       "sourceLink":"https://github.com/dhinakaran-Y/Aesthetic-Movies-App",
@@ -9,7 +18,7 @@
       "usedStacks":["javascript", "Tailwindcss" , "TMDB-api"]
     },
     {
-      "id": 2,
+      "id": 3,
       "imgPath": "./Images/projects/insta-clone-app.png",
       "liveLink": "https://dhinakaran-y.github.io/Instagram-clone-app/",
       "sourceLink": "https://github.com/dhinakaran-Y/Instagram-clone-app",

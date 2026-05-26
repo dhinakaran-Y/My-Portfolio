@@ -44,7 +44,7 @@ const ProfileSection = () => {
         </h2>
         <h4
           className={`xl:text-3xl lg:text-2xl font-semibold text-gray-500 ${`sm:text-xl`} ${`md:text-2xl`} ${`max-sm:text-xl`}`}>
-          Front-end Developer
+          Fullstack Developer - MERN
         </h4>
         <p
           className={`text-balance ${`xl:text-2xl xl:leading-relaxed xl:w-xl`} ${`lg:text-xl lg:leading-relaxed lg:w-md`} ${`sm:text-sm sm:w-80 sm:mx-auto`} ${`md:text-lg md:mt-2`} ${`max-sm:text-sm max-sm:w-75 max-sm:mx-auto`} lg:mx-0`}>

@@ -1,78 +1,107 @@
 [
   {
     "id": 1,
-    "name": "React",
-    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    "summa":"https://github.com/dhinakaran-Y.png","known":40
-    },
+    "name": "Express.js",
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    "summa": "https://github.com/dhinakaran-Y.png",
+    "known": 70
+  },
   {
     "id": 2,
+    "name": "Node.js",
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    "summa": "https://github.com/dhinakaran-Y.png",
+    "known": 70
+  },
+  {
+    "id": 3,
+    "name": "Next.js",
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    "summa": "https://github.com/dhinakaran-Y.png",
+    "known": 40
+  },
+  {
+    "id": 4,
+    "name": "React",
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "summa": "https://github.com/dhinakaran-Y.png",
+    "known": 80
+  },
+  {
+    "id": 5,
     "name": "Javascript",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     "known": 80
   },
   {
-    "id": 3,
+    "id": 6,
     "name": "tailwindcss",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     "known": 70
   },
   {
-    "id": 4,
+    "id": 7,
     "name": "bootstrap",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg",
     "known": 70
   },
   {
-    "id": 5,
+    "id": 8,
     "name": "Sass",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
     "known": 40
   },
   {
-    "id": 6,
+    "id": 9,
     "name": "Figma",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
     "known": 30
   },
   {
-    "id": 7,
+    "id": 10,
     "name": "Firebase",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg",
     "known": 30
   },
   {
-    "id": 8,
+    "id": 11,
+    "name": "Supabase",
+    "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    "summa": "https://github.com/dhinakaran-Y.png",
+    "known": 40
+  },
+  {
+    "id": 12,
     "name": "Git",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     "known": 40
   },
   {
-    "id": 9,
+    "id": 13,
     "name": "Mysql",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
     "known": 20
   },
   {
-    "id": 10,
+    "id": 14,
     "name": "Python",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
     "known": 20
   },
   {
-    "id": 11,
+    "id": 15,
     "name": "C++",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg",
     "known": 20
   },
   {
-    "id": 12,
+    "id": 16,
     "name": "HTML",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg",
     "known": 90
   },
   {
-    "id": 13,
+    "id": 17,
     "name": "CSS",
     "path": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg",
     "known": 90
