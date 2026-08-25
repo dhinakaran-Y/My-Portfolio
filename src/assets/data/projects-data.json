@@ -2,20 +2,20 @@
   {
       "id" : 1,
       "imgPath":"./Images/projects/MMC.png",
-      "liveLink":"https://mmc-my-movies-collections-frontend.vercel.app/",
+      "liveLink":"https://mmc-my-movies-collection.vercel.app/",
       "sourceLink":"https://github.com/dhinakaran-Y/MMC-my-movies-collection",
       "title":"MMC - My Movies Collection",
-      "desc":"MMC is a personal digital library created to store your watch list movies in a digital formate with custom categorization. It's a web application built using the MERN stack (MongoDB, Express.js, Next.js, Node.js) and Tailwind CSS for styling. The application allows users to create an account, log in, and manage their movie collection. Users can add movies to their collection, categorize them based on their preferences, and view details about each movie. The backend is powered by Node.js and Express.js, while the frontend is built with next.js and styled using Tailwind CSS.",
-      "usedStacks":["Next.js", "Node.js", "Express.js", "MongoDB", "Tailwindcss" , "TMDB-api"]
+      "desc":"A full-stack entertainment aggregator and smart watchlist manager. Features multi-provider discovery (TMDB, AniList, TVmaze, WatchList, OMDB), custom-themed collections, watched history tracking, and shareable playlists with role-based access control.",
+      "usedStacks":["Next.js", "Node.js", "Express.js", "MongoDB", "Tailwindcss" , "REST APIs", "JET Auth", "TMDB-api", "TVmaze-api", "WatchList-api", "AniList-api", "OMDB-api"]
     },
     {
       "id" : 2,
-      "imgPath":"./Images/projects/aesthetic-movies-img.png",
-      "liveLink":"https://dhinakaran-y.github.io/Aesthetic-Movies-App/",
-      "sourceLink":"https://github.com/dhinakaran-Y/Aesthetic-Movies-App",
-      "title":"Aesthetic Movies",
-      "desc":"An Application like movies website .It's inspired and clone all movies , OTT platform (netflix , crunchyroll , plex ,more..) for learning purpose only.The movie data are fetched from TMDB-Database.",
-      "usedStacks":["javascript", "Tailwindcss" , "TMDB-api"]
+      "imgPath":"./Images/projects/indian-colleges-data-lib-img.png",
+      "liveLink":"https://college-api-nextjs-lyart.vercel.app/",
+      "sourceLink":"",
+      "title":"indian-colleges-data-lib",
+      "desc":"A web platform for exploring and filtering data across 23,000+ Indian higher education colleges.Built a multi-level hierarchical filtering system for fast, granular college discovery.Added data export to Excel and direct Google Maps location links.",
+      "usedStacks":["Next.js", "React", "Tailwindcss" , "exceljs", "file-saver"]
     },
     {
       "id": 3,
